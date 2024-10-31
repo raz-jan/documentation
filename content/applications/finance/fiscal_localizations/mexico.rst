@@ -903,7 +903,8 @@ Like with sales orders, choose the correct :guilabel:`Periodicity` and press **C
    :align: center
    :alt: Global Invoice POS
 
-This will attach a XML file in all orders, and you'll be able to download it by going to the |CFDI| tab. If needed, in the same tab you can cancel the invoice.
+This attaches an XML file in all orders, and can be downloaded by going to the :guilabel:`CFDI` tab. If needed, in the same tab you can cancel the invoice.
+
 .. important::
    In order to use this feature, you need to make sure not to use taxes *Included in the Price* to prevent rounding issues.
 
