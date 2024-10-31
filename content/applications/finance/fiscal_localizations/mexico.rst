@@ -887,14 +887,14 @@ This will provide access to a special menu where they can add their fiscal infor
    :alt: Customer Portal for Electronic Invoicing
 
 .. seealso::
-   :doc:`../sales/point_of_sale/receipts_invoices`
+   :doc:`../../sales/point_of_sale/receipts_invoices`
 
 Global invoice
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 As with regular sales orders, you can also create global invoices from a POS session. 
 
-For this, make sure to not select neither any Customer nor the Invoice option in the Payment menu and go to :menuselection:`Point of Sale --> Orders --> Orders`.
+For this, make sure not to select a customer or the invoice option in the payment menu and go to :menuselection:`Point of Sale --> Orders --> Orders`.
 There, select all the orders to invoice, click the :icon:`fa-cog` :guilabel:`(gear)` to open the actions drop-down menu and select :guilabel:`Create Global Invoice`. 
 
 Like with sales orders, choose the correct :guilabel:`Periodicity` and press **Create**
