@@ -479,8 +479,8 @@ If a fully-conciliated payment is related to an invoice with a Fiscal Folio, the
 automatically and it'll appear in the |CFDI| tab in both the Invoice and the Payment. 
 
 .. tip::
-   While it is a bad fiscal practice, you can also send PUE Payments to the government, however you need 
-   to press :guilabel:`Force CFDI` in the :guilabel:`CFDI` tab for this.
+   While it is a bad fiscal practice, you can also send PUE payments to the government, however you need 
+   to press *Force CFDI* in the *CFDI* tab for this.
 
 .. image:: mexico/mx-signed-complement.png
    :align: center
