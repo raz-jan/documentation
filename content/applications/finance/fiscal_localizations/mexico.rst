@@ -326,7 +326,7 @@ The `digital certificates of the company
 the :guilabel:`Certificates` section. To do so, navigate to :menuselection:`Settings -->
 Accounting --> MX Electronic invoicing`. Under the :guilabel:`Certificates` section, select
 :guilabel:`Add a line`, and a window will open. From there, upload your digital :guilabel:`Certificate`
-(:file:`.cer` file), your :guilabel:`Certificate Key`(:file:`.key` file), and your 
+(:file:`.cer` file), your :guilabel:`Certificate Key` (:file:`.key` file), and your 
 :guilabel:`Certificate Password`. To finish, click on :guilabel:`Save & Close`.
 
 .. image:: mexico/mx-certificates.png
