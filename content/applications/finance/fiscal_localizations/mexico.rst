@@ -273,7 +273,7 @@ Purchase --> Fiscal Information`, and activate the :guilabel:`No Tax Breakdown` 
 Other tax configurations
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Mexican Localization uses :doc:`Cash basis taxes <../../finance/accounting/taxes/cash_basis>`
+The Mexican Localization uses :doc:`Cash basis taxes <../../finance/accounting/taxes/cash_basis>`.
 So, when registering a payment, Odoo will carry out the movement of taxes from the *Cash Basis
 Transition Account* to the account set in the :guilabel:`Definition` tab. For such movement, a tax
 base account will be used: (`899.01.99 Base Imponible de Impuestos en Base a Flujo de Efectivo`) in the
