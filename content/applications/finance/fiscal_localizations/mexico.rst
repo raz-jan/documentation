@@ -910,8 +910,8 @@ This attaches an XML file in all orders, and can be downloaded by going to the :
 
 If eventually any of the orders thar are part of the Global Invoice needs to be addressed to a customer, you can still send an invoice in the same view by pressing :guilabel:`Refund` and :guilabel:`Payment` to create a **REFUND** order and then create the corresponding Invoice in the original order with a c
 
-This can also be done in the POS Session, by going to the **Order** menu and pressing **Invoice**. It'll ask you to add a customer
-for both the credit note of the Global Invoice and the new Invoice to be created automatically.
+This can also be done in the **POS** session, by going to the :guilabel:`Order` menu and pressing :guilabel:`Invoice`. It'll ask you to add a customer
+for both the credit note of the global invoice and the new invoice to be created automatically.
 
 eCommerce
 ---------
