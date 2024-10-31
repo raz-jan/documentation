@@ -324,7 +324,7 @@ section, enter the name of your |PAC| with your credentials (:guilabel:`Username
 The `digital certificates of the company
 <https://www.gob.mx/tramites/ficha/certificado-de-sello-digital/SAT139>`_ must be uploaded within
 the :guilabel:`Certificates` section. To do so, navigate to :menuselection:`Settings -->
-Accounting --> MX Electronic invoicing`. Under the :guilabel:` Certificates` section, select
+Accounting --> MX Electronic invoicing`. Under the :guilabel:`Certificates` section, select
 :guilabel:`Add a line`, and a window will open. From there, upload your digital :guilabel:`Certificate`
 (:file:`.cer` file), your :guilabel:`Certificate Key`(:file:`.key` file), and your 
 :guilabel:`Certificate Password`. To finish, click on :guilabel:`Save & Close`.
