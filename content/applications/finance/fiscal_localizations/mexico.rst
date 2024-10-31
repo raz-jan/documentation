@@ -828,8 +828,8 @@ All invoices should be signed under the same XML file, with the same :guilabel:`
    :alt: Invoice successfully signed Globally
 
 .. tip::
-   - By pressing **Show** in the |CFDI| tab, you will be able to see a list with all related invoices.
-   - By pressing **Cancel** in the |CFDI| tab, you will be able to cancel the global invoice in both the |SAT|
+   - By pressing :guilabel:`Show` in the :guilabel:`CFDI` tab, you will be able to see a list with all related invoices.
+   - By pressing :guilabel:`Cancel` in the :guilabel:`CFDI` tab, you will be able to cancel the global invoice in both the |SAT|
    and Odoo. 
 
 .. note::
@@ -840,20 +840,20 @@ Point of sale
 
 The :doc:`Point of sale <../../sales/point_of_sale>` adaptation of the Mexican Localization let's you create
 invoices that comply with the |SAT| requeriements directly in the **POS session**, with the added benefit of creating
-receipt tickets that allow *self-invoicing* in a special portal, and the creation of Global Invoices with a just couple clicks.
+receipt tickets that allow *self-invoicing* in a special portal, and the creation of global invoices with a just couple clicks.
 
 Point of sale flow
 ~~~~~~~~~~~~~
 
-Other than the standard :doc:`Point of Sale Configuration <../../sales/point_of_sale/configuration>`, the only requeriement for the Mexican Localization is the
-addition fact that each Payment Method needs to be configured with a Journal that contains a correct :guilabel:`Payment Way`.
+Other than the standard :doc:`Point of Sale configuration <../../sales/point_of_sale/configuration>`, the only requirement for the Mexican localization is the
+addition fact that each payment method needs to be configured with a journal that contains a correct :guilabel:`Payment Way`.
 
 By continuing the regular Point of Sale flow, by clicking the Customer button you can either create or select 
 a customer. You can make sure that your customer invoicing information (such as the RFC or Fiscal Regime) is
 correct and even modify it directly from the session. 
 
-After selecting a customer, you can press the Invoice button. A menu will appear for you to select the :guilabel:`Usage`
-and to determine if it is an Invoice to public. Press confirm and then validate to complete the order.
+After selecting a customer, you can press the :guilabel:`Invoice` button. A menu will appear for you to select the :guilabel:`Usage`
+and to determine if it is an invoice to public. Press confirm and then validate to complete the order.
 The PDF will be downloaded and will be able to be sent via mail to the final customer alongside the receipt. 
 
 .. tip::
@@ -868,19 +868,19 @@ You can also create and sign Credit notes automatically by selecting an order an
 you select again the "invoice" button.
 
 .. important::
-   - In the Mexican Localization, you cannot mix positive and negative lines in a POS session.
-   - If you receive a SAT Validation Error, customer will get a :doc:`Pro-Forma <../../sales/sales/invoicing/proforma>` Invoice instead.
+   - In the Mexican localization, you cannot mix positive and negative lines in a **POS** session.
+   - If you receive a |SAT| validation error, customer will get a :doc:`Pro-Forma <../../sales/sales/invoicing/proforma>` invoice instead.
 
 Self-invoicing portal
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 If the final customer is not sure if they want to have their invoice generated at the exact moment of the sale,
 you can add the option of creating an Receipt with either a QR code or a Five Digit Code in the settings of your Point of Sale Session
 in :menuselection:`Point of Sale --> Configuration --> Bills & Receipts` and select :guilabel:`Use QR code on ticket`,
 :guilabel:`Generate a code on ticket` or both. 
 
-This will provide access to a special menu where they can add their fiscal information, including the **Usage** and
-**Fiscal Regime**
+This will provide access to a special menu where they can add their fiscal information, including the *Usage* and
+*Fiscal Regime*.
 
 .. image:: mexico/mx-pos-portal.png
    :align: center
