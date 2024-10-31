@@ -680,8 +680,8 @@ delete the line that contains the product "Anticipo".
    :alt: Invoice for the Total
 
 .. tip::
-   If you are going to use Down Payments with the Mexican Localization, make sure that the :guilabel:`Invoicing Policy`
-   of your products are **Ordered quantities.** Otherwise a Customer Credit Note will be created.
+   If you are going to use down payments with the Mexican localization, make sure that the :guilabel:`Invoicing Policy`
+   of your products are :guilabel:`Ordered quantities`. Otherwise a customer credit note will be created.
 
 Then, copy the :guilabel:`Fiscal Folio` from the down payment invoice, and paste it into the
 :guilabel:`CDFI Origin` of the final invoice, adding the prefix `07|` before the value. Then, sign
@@ -696,21 +696,21 @@ invoice. At the bottom of the new invoice, you can find the credit note in the
 :guilabel:`Outstanding credits` - add it as payment. Finally, register the remaining amount with the
 :guilabel:`Register Payment` wizard.
 
-In the Sales Order, all three documents should appear as "In Payment".
+In the sales order, all three documents should appear as "In Payment".
 
 .. image:: mexico/mx-downpayment-2.png
    :align: center
    :alt: Correct results of Method A
 
-Method "B"
-^^^^^^^^^^
+Method B
+^^^^^^^^
 
-Another, simpler way to fullfil SAT Requeriements involves creating only the Down Payment invoice, and
+Another, simpler way to fulfill |SAT| requirements involves creating only the down payment invoice, and
 a second invoice for the remnant. This method involves the fact that negative lines are treated as discounts.
 
-For this, follow the same process as Method "A", up until the creation of the final invoice. Don't delete
-the line that contain the product "Anticipo", and instead, rename the other products :guilabel:`Description`
-to include the text "|CFDI| por remanente de un anticipo". Don't forget to add the :guilabel:`Fiscal Folio`
+For this, follow the same process as :ref:`Method A <l10n-mx/down-payment-method-a>`, up until the creation of the final invoice. Don't delete
+the line that contains the *Anticipo* product, and instead, rename the other products :guilabel:`Description`
+to include the text `CFDI por remanente de un anticipo`. Don't forget to add the :guilabel:`Fiscal Folio`
 of the down payment invoice in the :guilabel:`CDFI Origin` of the final invoice, adding the prefix `07|`.
 
 Finally, sign the final invoice. 
@@ -719,12 +719,12 @@ Finally, sign the final invoice.
    :align: center
    :alt: Correct results of Method B
 
-XML Reader
+XML reader
 **********
 
-In certain ocassions, such as when you are creating invoices in another software or in the |SAT| directly,
+In certain occasions, such as when you are creating invoices in another software or in the |SAT| directly,
 you would want to upload the invoices in Odoo. The XML Reader allows you to retrieve the data from an .XML
-file: To do this, navigate to :menuselection:`Accounting --> Customers --> Invoices` and, in the list view, you
+file. To do this, navigate to :menuselection:`Accounting --> Customers --> Invoices` and, in the list view, you
 can press the :guilabel:`Upload` button to select any number of .XML files, and draft invoices will be
 automatically created. This can work also by dragging the files from your computer and dropping them in
 the view.
@@ -748,14 +748,14 @@ If you use the :guilabel:`Send & Print` the PDF Document will have all the corre
 This can be done for :guilabel:`Vendor Bills` too.  
 
 .. tip::
-   - You can also drag and drop XML files for already created draft Invoices. It'll retreive the :guilabel:`Fiscal Folio`
+   You can also drag and drop XML files for already created draft invoices and Odoo retrieves the :guilabel:`Fiscal Folio`.
 
 .. feav note - 18.0 can now conciliate with PO
 
 CFDI to public
 **************
 
-The Mexican Government requires that any goods or services that you might sell should be backed up by
+The Mexican government requires that any goods or services that you might sell should be backed up by
 an invoice. If the customer you are selling to does not require an invoice or has no |RFC|, a 
 *CFDI to Public* has to be created. 
 
@@ -771,7 +771,7 @@ will override the data in the invoice contact and will add the following charact
    :alt: CFDI to Public Checkbox
 
 .. important::
-   If your contact Country is empty, the final invoice will be considered as a *CFDI to Public* for national 
+   If your contact *Country* is empty, the final invoice is considered as a *CFDI to Public* for national 
    customers. You'll receive a non-blocking warning before signing the document. 
 
 If the final customer doesn't share any details with you, you can also create a generic :guilabel:`Customer`.
