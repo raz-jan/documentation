@@ -486,7 +486,7 @@ automatically and it'll appear in the |CFDI| tab in both the Invoice and the Pay
    :align: center
    :alt: Payment Complement sucessfully signed.
 
-Similar to an Invoice or Credit Note, you can send the PDF and XML to the final customer. To do so, click
+Similar to an invoice or credit note, you can send the PDF and XML to the final customer. To do so, click
 the :icon:`fa-cog` :guilabel:`(gear)` to open the actions drop-down menu and select :guilabel:`Send receipt 
 by email`.
 
@@ -499,7 +499,7 @@ there are two requirements for this:
 
 - With all cancellation requests, you **must** specify a *cancellation reason*.
 - After 24 hours have passed since the creation of the invoice, if certain conditions are met, the 
- client **must** be asked to accept or reject the cancellation.
+  client **must** be asked to accept or reject the cancellation.
 
 .. FEAV Note - Do you guys have any idea how to add the section "¿El proceso de cancelación de un CFDI cambia dependiendo de la versión en que se emitió el CFDI?" in here? It is very important, literally the most
 common support ticket  https://www.sat.gob.mx/consultas/91447/nuevo-esquema-de-cancelacion#
@@ -527,7 +527,7 @@ field having the value `04|` plus the :guilabel:`Fiscal Folio` of the old docume
 
 Next, confirm and sign the invoice with the correct information and navigate to the invoice to cancel
 where the field :guilabel:`Substituted By` is now available. Click the :guilabel:`Request Cancel` button 
-again. The button :guilabel:`Create Replacement Invoice` will be reeplaced by :guilabel:`Confirm`.
+again. The button :guilabel:`Create Replacement Invoice` will be replaced by :guilabel:`Confirm`.
 
 Finally, click the button and the :guilabel:`SAT Status` will change to **Not Defined** where after pressing
 :guilabel:`Update SAT` both the invoice status and |SAT| status field will change to **Canceled**
@@ -551,13 +551,13 @@ Finally, click the button and the :guilabel:`SAT Status` will change to **Not De
 
 .. seealso::
    `Tool to validate Mexican Electronic Documents (CFDI) status.
-   <https://verificacfdi.facturaelectronica.sat.gob.mx/>`_.
+   <https://verificacfdi.facturaelectronica.sat.gob.mx/>`_
 
 
 For the cancellation reasons **02**, **03** and **04**, the button :guilabel:`Create Replacement Invoice`
 won't appear and you'll be able to ask for the request immediately.
 
-You can see both the current :guilabel:`State` and :guilabel:`Cancellation Reason` in the |CFDI| tab.
+You can see both the current :guilabel:`State` and :guilabel:`Cancellation Reason` in the :guilabel:`CFDI` tab.
 
 .. image:: mexico/mx-cancellation-reason-tab.png
    :align: center
@@ -570,7 +570,7 @@ Payment cancellations
 *********************
 
 It is also possible to cancel *Payment Complements*. Go to the :guilabel:`CFDI` of either the related invoice 
-or the payment itself and press **Cancel**.
+or the payment itself and press :guilabel:`Cancel`.
 
 Like with Invoices, you will need to go to the Payment and press :guilabel:`Update SAT` in order to change
 the :guilabel:`SAT Status` and **Status** to *Cancelled*
@@ -613,11 +613,11 @@ Discounts
 **********
 
 By law, electronic document sent to the government cannot have negative lines, as this can trigger errors. Therefore,
-when you utilize :doc:`Gift Cards <../../sales/sales/products_prices/ewallets_giftcards>` or :doc:`Loyalty Programs <../../sales/sales/products_prices/loyalty_discount>` the subsecuent negative lines will be translated in the XML as if they were regular 
-:doc:`Discounts <../../sales/sales/products_prices/prices/pricing/>`
+when you utilize :doc:`Gift Cards <../../sales/sales/products_prices/ewallets_giftcards>` or :doc:`Loyalty Programs <../../sales/sales/products_prices/loyalty_discount>` the subsequent negative lines will be translated in the XML as if they were regular 
+:doc:`Discounts <../../sales/sales/products_prices/prices/pricing/>`.
 
 In order to set this up, navigate to :menuselection:`Sales --> Products --> Products` and create a product `Discounts`,
-make sure that it has a valid Tax (Usually IVA 16%)
+make sure that it has a valid :guilabel:`Tax` (usually :guilabel:`IVA` at `16%`).
 
 After this, create and sign your invoice, and add the `Discounts` product at the bottom. In the XML the discount should
 be substracted from the first invoice line available.
@@ -637,7 +637,7 @@ A common practice in Mexico is the usage of :doc:`Down Payments <../../sales/sal
 It's usage primary consists of cases where you receive a payment for a good or service where either the 
 product or the price (or both) hasn't been determinated at the moment. 
 
-The |SAT| allows two diferent ways to handle this process: Both of them involve linking all invoices to 
+The |SAT| allows two diferent ways to handle this process: both of them involve linking all invoices to 
 each other with the :guilabel:`CFDI Origin` field. 
 
 For this process, it is necessary to have the :doc:`Sales <../../sales>` app installed.
@@ -662,11 +662,11 @@ Then, go to :menuselection:`Sales --> Settings --> Invoicing --> Down Payments`,
 
 .. FEAV Note - This is not necessary anymore in 17.1+, should it be worth it to menction it?  
 
-Method "A"
-^^^^^^^^^^^
+Method A
+^^^^^^^^
 
 This method consists in creating a Down Payment invoice, creating a invoice for the total amount, and
-finally, a Credit Note for the total of the Down Payment.
+finally, a credit note for the total of the down payment.
 
 First, create a sales order with the total amount, and create down payment from it (either using a 
 percentage or fixed amount). Then, sign the document, and register the payment.
@@ -762,7 +762,7 @@ an invoice. If the customer you are selling to does not require an invoice or ha
 If you select the :guilabel:`CFDI to Public` checkbox in either a Sale Order or an Invoice, the final XML
 will override the data in the invoice contact and will add the following characteristics:
 
-- |RFC|: **XAXX010101000** if it is a National Customer or **XEXX010101000** if it is a Foregin Customer
+- |RFC|: **XAXX010101000** if it is a national customer or **XEXX010101000** if it is a foreign customer 
 - :guilabel:`ZIP` code: The same code of the company
 - :guilabel:`Usage`: S01 - Without Fiscal Effects
 
