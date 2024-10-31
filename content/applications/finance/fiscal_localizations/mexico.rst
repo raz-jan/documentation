@@ -215,7 +215,7 @@ the contact name, full :guilabel:`Address` including: :guilabel:`ZIP` code, :gui
    added in the :guilabel:`Sales & Purchase` tab.
 
 .. warning::
-   Having a |RFC| (:guilabel:`Tax ID`) set but no Country configured may result in incorrect invoices.
+   Having a |RFC| (:guilabel:`Tax ID`) set but no :guilabel:`Country` configured may result in incorrect invoices.
 
 .. FEAV NOTE - we've got 100+ tickets of customers having errors for forgetting the country: the warning is needed. context here- https://www.odoo.com/odoo/project.task/3891896?cids=17
 
