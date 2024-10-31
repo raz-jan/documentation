@@ -276,7 +276,7 @@ Other tax configurations
 The Mexican Localization uses :doc:`Cash basis taxes <../../finance/accounting/taxes/cash_basis>`.
 So, when registering a payment, Odoo carries out the movement of taxes from the *Cash Basis
 Transition Account* to the account set in the :guilabel:`Definition` tab. For such movement, a tax
-base account will be used: (`899.01.99 Base Imponible de Impuestos en Base a Flujo de Efectivo`) in the
+base account is used: (`899.01.99 Base Imponible de Impuestos en Base a Flujo de Efectivo`) in the
 journal entry when reclassifying taxes. **Do not delete this account**.
 
 Products
