@@ -905,7 +905,7 @@ Like with sales orders, choose the correct :guilabel:`Periodicity` and press **C
 
 This will attach a XML file in all orders, and you'll be able to download it by going to the |CFDI| tab. If needed, in the same tab you can cancel the invoice.
 .. important::
-   - In order to use this feature, you need to make sure not to use taxes **Included in the Price** to prevent rounding issues.
+   In order to use this feature, you need to make sure not to use taxes *Included in the Price* to prevent rounding issues.
 
 If eventually any of the orders thar are part of the Global Invoice needs to be addressed to a customer, you can still send an invoice in the same view by pressing :guilabel:`Refund` and :guilabel:`Payment` to create a **REFUND** order and then create the corresponding Invoice in the original order with a c
 
