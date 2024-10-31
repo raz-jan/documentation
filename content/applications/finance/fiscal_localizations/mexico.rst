@@ -775,7 +775,7 @@ will override the data in the invoice contact and will add the following charact
    customers. You'll receive a non-blocking warning before signing the document. 
 
 If the final customer doesn't share any details with you, you can also create a generic :guilabel:`Customer`.
-It's name cannot be `PUBLICO EN GENERAL` or an error will be triggered. (It can be, for example, `CLIENTE FINAL`).
+It's name cannot be `PUBLICO EN GENERAL` or an error will be triggered (it can be, for example, `CLIENTE FINAL`).
 
 .. seealso::
    `Regla 2.7.1.21 Expedición de comprobantes en operaciones con el público en general.
@@ -784,10 +784,10 @@ It's name cannot be `PUBLICO EN GENERAL` or an error will be triggered. (It can 
 Global invoice
 **************
 
-If by the end of a certain period of time (That can vary from daily to bimonthly, depending of your company's
+If by the end of a certain period of time (that can vary from daily to bimonthly, depending of your company's
 legal needs and preferences) and the customer still has sales that weren't marked as regular invoices or 
 individual *CFDI to Public* invoices, the |SAT| allows for the creation of a single invoice that can contain all 
-operations, known as a **Global Invoice**.
+operations, known as a *Global Invoice*.
 
 To do so, the :doc:`Sales <../../sales/sales>` app needs to be installed.
 
@@ -801,12 +801,12 @@ Sales flow
 First, it is necessary to create a special :guilabel:`Journal` created in :menuselection:`Accounting --> 
 Configuration --> Journals` with the purpose of keeping a separate sequence. 
 
-Then, make sure that all of your Sales Orders that you want to sign have the following configurations:
+Then, make sure that all of your sales orders that you want to sign have the following configurations:
 
 - All of them have the :guilabel:`CFDI to Public` checkbox enabled.
 - All of them have the :guilabel:`Invoicing Journal` that you created, in the :guilabel:`Other Info` tab
  with the :doc:`debug mode <../../general/developer_mode>` enabled.
-- All of them have the :guilabel:`Invoice Status` marked as **To Invoice**.
+- All of them have the :guilabel:`Invoice Status` marked as :guilabel:`To Invoice`.
 
 .. image:: mexico/mx-global-invoice1.png
    :align: center
@@ -816,8 +816,8 @@ After this, go to :menuselection:`Sales --> To Invoice --> Orders to Invoice`, s
 orders and press :guilabel:`Create Invoices`. Make sure to disable the :guilabel:`Consolidated Billing`
 checkbox and press :guilabel:`Create Draft Invoice`.
 
-You will be redirected to a list of invoices. Select all of them and in the **Actions** drop-down menu 
-select :guilabel:`Post entries`. Select all posted invoices again and go back to the **Actions** drop-down 
+You will be redirected to a list of invoices. Select all of them and in the :icon:`fa-gear` :guilabel:`Actions` drop-down menu 
+select :guilabel:`Post entries`. Select all posted invoices again and go back to the  :icon:`fa-gear` :guilabel:`Actions` drop-down 
 menu to select :guilabel:`Create Global Invoice`.
 
 In the wizard, select the :guilabel:`Periodicity` that fits your business needs and press :guilabel:`Create`.
@@ -843,12 +843,12 @@ invoices that comply with the |SAT| requeriements directly in the **POS session*
 receipt tickets that allow *self-invoicing* in a special portal, and the creation of global invoices with a just couple clicks.
 
 Point of sale flow
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 Other than the standard :doc:`Point of Sale configuration <../../sales/point_of_sale/configuration>`, the only requirement for the Mexican localization is the
 addition fact that each payment method needs to be configured with a journal that contains a correct :guilabel:`Payment Way`.
 
-By continuing the regular Point of Sale flow, by clicking the Customer button you can either create or select 
+By continuing the regular **Point of Sale** flow, by clicking the :guilabel`Customer` button you can either create or select 
 a customer. You can make sure that your customer invoicing information (such as the RFC or Fiscal Regime) is
 correct and even modify it directly from the session. 
 
@@ -875,7 +875,7 @@ Self-invoicing portal
 ~~~~~~~~~~~~~~~~~~~~~
 
 If the final customer is not sure if they want to have their invoice generated at the exact moment of the sale,
-you can add the option of creating an Receipt with either a QR code or a Five Digit Code in the settings of your Point of Sale Session
+you can add the option of creating an receipt with either a QR code or a five digit code in the settings of your **Point of Sale** session
 in :menuselection:`Point of Sale --> Configuration --> Bills & Receipts` and select :guilabel:`Use QR code on ticket`,
 :guilabel:`Generate a code on ticket` or both. 
 
@@ -897,7 +897,7 @@ As with regular sales orders, you can also create global invoices from a POS ses
 For this, make sure not to select a customer or the invoice option in the payment menu and go to :menuselection:`Point of Sale --> Orders --> Orders`.
 There, select all the orders to invoice, click the :icon:`fa-cog` :guilabel:`(gear)` to open the actions drop-down menu and select :guilabel:`Create Global Invoice`. 
 
-Like with sales orders, choose the correct :guilabel:`Periodicity` and press **Create**
+Like with sales orders, choose the correct :guilabel:`Periodicity` and press :guilabel:`Create`.
 
 .. image:: mexico/mx-pos-gi.png
    :align: center
