@@ -349,7 +349,7 @@ A many-to-one is a simple link to another object. For example, in order to defin
 In the case of many-to-one fields, several attributes can be set to detail the relation:
 
 - `relation`: the name of the model to link to (required)
-- `ondelete`: the action to perform when the record is deleted (default: `set null`)
+- `on_delete`: the action to perform when the record is deleted (default: `set null`)
 - `domain`: a domain filter to apply to the relation
 
 .. exercise::
